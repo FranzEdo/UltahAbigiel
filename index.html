@@ -49,7 +49,7 @@
 
     .running-text {
       font-family: 'Pacifico', cursive;
-      font-weight: 700;
+      font-weight: 100;
       font-size: 1.2rem;
       color: #333;
       white-space: nowrap;
@@ -129,13 +129,13 @@
 </head>
 <body>
   <div class="birthday-card">
-    <div class="running-text">Met Ultah Ya... Ponakan Cantik yang ke 12 Thn moga selalu sehat,panjang umur,murah rejeki,Penuh Berkat Tuhan!</div>
+    <div class="running-text">Met Ultah Ya... Ponakan PIDO...Cantik yang ke-12 Thn moga selalu sehat,panjang umur,murah rejeki,Penuh Berkat Tuhan!</div>
     <img src="foto.jpg" alt="Birthday person" class="profile-image">
     <h1 class="birthday-text">Happy Birthday!</h1>
     <p>Abigiel Nathania Valerie Sihombing.</p>
-    <p>Abigiel TURN 12th</p>
+                <div class="text">From....<span class="typing"></span></div>
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
   <script>
     // Generate confetti
     const numConfetti = 80;
@@ -155,6 +155,14 @@
       confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
       confettiContainer.appendChild(confetti);
     }
+
+      // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["Papi Fransiscus Edo", "Abang Albertus Avniel", "Moma Tatiana", "#ShinobeFranz#AvNiel"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
   </script>
 </body>
 </html>
